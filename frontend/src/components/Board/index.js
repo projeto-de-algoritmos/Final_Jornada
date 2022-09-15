@@ -47,7 +47,7 @@ export default function Board() {
             <>
               <div className='inline-flex'>
                 <div className="board-span-input">
-                  <span className='board-span'>Número do nó:</span>
+                  <span className='board-span'>Número de passeios:</span>
                   <input id="node-number" className='board-input-1' placeholder='6'
                   />
                 </div>
@@ -67,7 +67,7 @@ export default function Board() {
                   <textarea id="arrive-nodes" className='board-text-area' cols="2" placeholder="2, 3, 6, 4, 6, 5"></textarea>
                 </div>
               </div>
-              <span className='board-span'>Largura dos nós:</span>
+              <span className='board-span'>Tempo gasto:</span>
               <textarea id="nodes-width" className='board-text-area' cols="2" placeholder="2, 3, 3, 2, 2, 1"></textarea>
               <button onClick={handleSubmit} type='submit' className='board-button'>Traçar jornada</button>
             </>
