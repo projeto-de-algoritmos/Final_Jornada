@@ -8,3 +8,12 @@ services:
       - "8000:8000"
     volumes:
       - ./app/:/code
+    
+  frontend:
+    build:
+        context: .
+        dockerfile: Dockerfile.front
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./frontend/:/front
